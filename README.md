@@ -14,22 +14,22 @@ MRI images are often degraded by noise, either from the scanning process or exte
 
 ---
 
-## 🚀 Real-World Relevance
+##  Real-World Relevance
 
-* 🏥 **Medical Imaging Quality Improvement**: Ensures that MRI scans are clear, allowing better diagnosis of conditions such as brain tumors, spinal cord injuries, etc.
-* 🚑 **Enhances Radiology Workflow**: Reduces the time radiologists spend dealing with noisy images, helping them focus on diagnosing.
-* 🧑‍⚕️ **Reduces Image Artifacts**: Denoising minimizes the visual artifacts caused by MRI scanners, leading to more reliable results.
-* 💡 **Advancement of Medical Research**: By improving MRI imaging, researchers can obtain more precise data for understanding diseases and developing treatments.
-
----
-
-## 🪨 Dataset Used
-
-The images used in this project are **MRI scans** that have been sourced from publicly available datasets, such as those provided by medical imaging repositories. These images are corrupted with noise (simulating real-world scanning artifacts) to test the effectiveness of the denoising techniques. Various levels of noise are introduced to replicate the types of distortions seen in actual MRI scans.
+ **Medical Imaging Quality Improvement**: Ensures that MRI scans are clear, allowing better diagnosis of conditions such as brain tumors, spinal cord injuries, etc.
+*  **Enhances Radiology Workflow**: Reduces the time radiologists spend dealing with noisy images, helping them focus on diagnosing.
+*  **Reduces Image Artifacts**: Denoising minimizes the visual artifacts caused by MRI scanners, leading to more reliable results.
+   **Advancement of Medical Research**: By improving MRI imaging, researchers can obtain more precise data for understanding diseases and developing treatments.
 
 ---
 
-## 🔧 Technologies Used
+## Dataset Used
+
+The images used in this project are **MRI scans** that have been sourced from publicly available dataset, such as those provided by medical imaging repositories. These images are corrupted with noise (simulating real-world scanning artifacts) to test the effectiveness of the denoising techniques. Various levels of noise are introduced to replicate the types of distortions seen in actual MRI scans.
+
+---
+
+## Technologies Used
 
 * **Python 3.x**: The primary programming language used to implement the solution.
 * **OpenCV**: For image processing and applying denoising filters.
@@ -40,50 +40,21 @@ The images used in this project are **MRI scans** that have been sourced from pu
 
 ---
 
-## 🔢 Techniques Implemented
+## Techniques Implemented
 
 The following denoising techniques were implemented and tested in the project:
 
 * **Gaussian Filter**: A basic filter used to smooth the image and reduce noise.
 * **Total Variation (TV) Denoising**: A regularization method aimed at reducing noise while preserving image edges.
 * **Non-Local Means (NLM)**: A powerful denoising technique based on the self-similarity of image patches.
-* **Bilateral Filter**: A filter that smooths images while preserving edges.
-* **Hybrid Filters**: A combination of two denoising techniques applied in succession, such as **Median + NLM** and **Bilateral + Wavelet**.
 
 ---
 
-## 📷 Output Preview
-
-### Original and Noisy Images
-
-Below are the original and noisy MRI images that serve as input for the denoising methods:
-
-* **Original Image**:
-  ![Original MRI Image](results/original_mri_image.png)
-
-* **Noisy Image**:
-  ![Noisy MRI Image](results/noisy_mri_image.png)
-
-### Denoised Images (Grid)
-
-Here is a grid showing the results of various denoising techniques applied to the noisy image:
-
-* **Gaussian Filter**:
-  ![Gaussian Filter Result](results/gaussian_denoised.png)
-
-* **Total Variation Denoising**:
-  ![TV Denoising Result](results/tv_denoised.png)
-
-* **Non-Local Means (NLM)**:
-  ![NLM Denoising Result](results/nlm_denoised.png)
-
----
-
-## 📊 Evaluation Results
+##  Evaluation Results
 
 The effectiveness of each denoising technique is evaluated using three common image quality metrics: **MSE (Mean Squared Error)**, **PSNR (Peak Signal-to-Noise Ratio)**, and **SSIM (Structural Similarity Index)**. Below are the results for each technique:
 
-### 📊 Performance Evaluation
+### Performance Evaluation
 
 | Method                    | MSE    | PSNR (dB) | SSIM   |
 | ------------------------- | ------ | --------- | ------ |
@@ -99,27 +70,20 @@ From the table above, we can conclude that **Non-Local Means (NLM)** provides th
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```plaintext
 MRI-Denoising/
-├── images/
-│   ├── original_mri_image.jpg
-│   └── noisy_mri_image.jpg
-├── results/
-│   ├── gaussian_denoised.png
-│   ├── tv_denoised.png
-│   ├── nlm_denoised.png
-│   └── evaluation_results.csv
+├── image.jpeg
 ├── app.py
-├── denoise.py
+├── denoising_mri.py
 ├── README.md
-└── requirements.txt
+
 ```
 
 ---
 
-## 🔄 How to Run
+## How to Run
 
 To run this project locally, follow these steps:
 
@@ -129,19 +93,7 @@ To run this project locally, follow these steps:
    git clone https://github.com/your-username/MRI-Denoising.git
    ```
 
-2. **Navigate to the project folder**:
-
-   ```bash
-   cd MRI-Denoising
-   ```
-
-3. **Install the required dependencies**:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run the app**:
+2. **Run the app**:
 
    ```bash
    streamlit run app.py
@@ -151,27 +103,26 @@ To run this project locally, follow these steps:
 
 ---
 
-## 👨‍💼 Team Members
+## Team Members
 
-* **Jeswin Lobo (4SO22CD023)**
+* **Ananya (4SO22CD004)**
 
-  * 📧 Email: [22j23.jeswin@sjec.ac.in](mailto:22j23.jeswin@sjec.ac.in)
-  * 👤 GitHub: [Jeswin2003lobo](https://github.com/Jeswin2003lobo)
+  *  Email: [22j04.ananya@sjec.ac.in]
+  *  GitHub: [https://github.com/anany20]
 
-* **Shashank Rao U (4SO22CD046)**
+* **Chaitra Suvarna (4SO22CD014)**
 
-  * 📧 Email: [22j46.shashank@sjec.ac.in](mailto:22j46.shashank@sjec.ac.in)
-  * 👤 GitHub: [Shashankraou](https://github.com/Shashankraou)
+  *  Email: [22j14.chaitra@sjec.ac.in]
+  *  GitHub: [https://github.com/CSuvarna23]
+
+ * **Hanishree (4SO22CD022)**
+
+  *  Email: [22j22.hanishree@sjec.ac.in]
+  *  GitHub: [https://github.com/Hanishree04]
 
 ---
 
-## 📝 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 🚧 Acknowledgments
+## Acknowledgments
 
 Special thanks to the following libraries and resources:
 
@@ -180,4 +131,4 @@ Special thanks to the following libraries and resources:
 * [Streamlit](https://streamlit.io/)
 * [NumPy](https://numpy.org/)
 * [Pillow](https://python-pillow.org/)
-# dip
+
