@@ -54,13 +54,13 @@ The following denoising techniques were implemented and tested in the project:
 
 The effectiveness of each denoising technique is evaluated using three common image quality metrics: **MSE (Mean Squared Error)**, **PSNR (Peak Signal-to-Noise Ratio)**, and **SSIM (Structural Similarity Index)**. Below are the results for each technique:
 
-### Performance Evaluation
+### Performance Evaluation for Y20
 
 | Method                    | MSE    | PSNR (dB) | SSIM   |
 | ------------------------- | ------ | --------- | ------ |
-| **Gaussian Filter**       | 0.0074 | 21.31     | 0.4180 |
-| **Total Variation (TV)**  | 0.0070 | 21.54     | 0.3555 |
-| **Non-Local Means (NLM)** | 0.0033 | 24.86     | 0.5740 |
+| **Gaussian Filter**       | 0.0008 | 0.0010     | 0.0000 |
+| **Total Variation (TV)**  | 30.90 dB | 30.03dB     | 46.65dB |
+| **Non-Local Means (NLM)** | 0.9274 | 0.8748     | 0.9912 |
 
 * **MSE (Mean Squared Error)**: Lower values are better. Indicates the overall difference between the original and denoised images.
 * **PSNR (Peak Signal-to-Noise Ratio)**: Higher values indicate better denoising performance.
